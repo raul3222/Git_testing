@@ -11,12 +11,15 @@ class PersonInfoViewController: UIViewController {
     @IBOutlet var phoneNumberLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
     
-    var person: Person!
+    var person: Person?
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "\(person.name) \(person.lastName)"
-        phoneNumberLabel.text = person.phoneNumber
-        emailLabel.text = person.email
+        if let person = person {
+            navigationItem.title = "\(person.name) \(person.lastName)"
+            phoneNumberLabel.text = person.phoneNumber
+            emailLabel.text = person.email
+        }
+      
     }
 
 }

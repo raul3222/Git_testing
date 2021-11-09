@@ -9,11 +9,14 @@ import UIKit
 
 class ContactListTableViewController: UITableViewController {
     
-    private var contactList = Person.getPersonList()
+//    private var contactList = Person.getPersonList()
+    private var contactList = DataManager.sharedd
+//    let dataManager = DataManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        tabBarController?.title = "Persons list"
+        
     }
 
     // MARK: - Table view data source
@@ -42,13 +45,13 @@ class ContactListTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        
-        
-        guard let personInfoVC = segue.destination as? PersonInfoViewController else { return }
-    
-        guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        let person = contactList[indexPath.row]
-        personInfoVC.person = person
+        if segue.identifier == "personInfoSegue" {
+            guard let personInfoVC = segue.destination as? PersonInfoViewController else { return }
+
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            let person = contactList[indexPath.row]
+            personInfoVC.person = person
+        }
     }
     
 

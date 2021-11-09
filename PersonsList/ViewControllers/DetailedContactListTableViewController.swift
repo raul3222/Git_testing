@@ -8,31 +8,40 @@
 import UIKit
 
 class DetailedContactListTableViewController: UITableViewController {
-    var contactList: [Person]!
+    var contactList: [Person] = DataManager.sharedd
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return contactList.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
 
-
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "details", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "detailsCellId", for: indexPath)
         let contact = contactList[indexPath.row]
-        var content = cell.defaultContentConfiguration()
-        content.text = "\(contact.name) \(contact.lastName)"
-        cell.contentConfiguration = content
-
+        if indexPath.row == 0 {
+            cell.textLabel?.text = contact.phoneNumber
+        } else {
+            cell.textLabel?.text = contact.email
+        }
+        
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let contact = contactList[section]
+        return "\(contact.name) \(contact.lastName)"
     }
     
 
