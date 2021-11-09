@@ -19,7 +19,5 @@ class PersonInfoViewController: UIViewController {
             phoneNumberLabel.text = person.phoneNumber
             emailLabel.text = person.email
         }
-      
     }
-
 }

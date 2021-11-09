@@ -9,22 +9,26 @@
 
 class DataManager {
     
-    static let shared = DataManager()
-    
-    static var sharedd: [Person] = {
-           let instance = DataManager()
-       // instance.getPersonList()
+   
+    static var shared: [Person] = {
+        let instance = DataManager()
         return instance.getPersonList()
-       }()
+    }()
     
     private init() {}
     
-    //let persons = getPersonList()
         
-    private  var names = ["John", "Jim", "Tim", "Karl", "Ann", "Peter", "Nik", "Lucy", "Mia", "Jane"]
-    private  var lastNames = ["Murphy", "Jankin", "Williams", "Black", "Robertson", "Butler", "Isaacson", "Smith", "Pennyworth", "Nolan"]
-    private  var emails = ["qwe@mail.ru", "qqq@mail.ru", "www@mail.ru", "eee@mail.ru", "aaa@mail.ru", "sss@mail.ru", "ddd@mail.ru", "zzz@mail.ru", "xxx@mail.ru", "ccc@mail.ru"]
-    private  var phoneNumbers = ["123456789", "111111111", "222222222", "333333333", "440550660", "225665223", "666666666", "777777777", "550220330", "110220330"]
+    private  var names = ["John", "Jim", "Tim", "Karl", "Ann",
+                          "Peter", "Nik", "Lucy", "Mia", "Jane"]
+    
+    private  var lastNames = ["Murphy", "Jankin", "Williams", "Black", "Robertson",
+                              "Butler", "Isaacson", "Smith", "Pennyworth", "Nolan"]
+    
+    private  var emails = ["qwe@mail.ru", "qqq@mail.ru", "www@mail.ru", "eee@mail.ru", "aaa@mail.ru",
+                           "sss@mail.ru", "ddd@mail.ru", "zzz@mail.ru", "xxx@mail.ru", "ccc@mail.ru"]
+    
+    private  var phoneNumbers = ["123456789", "550220300", "660440100", "770999400", "440550660",
+                                 "225665223", "666666666", "330220100", "550220330", "110220330"]
     
     private  func getPersonList() -> [Person] {
         var persons = [Person]()
@@ -34,7 +38,7 @@ class DataManager {
                                   email: getRandomEmail(),
                                   phoneNumber: getRandomPhoneNumbers()))
         }
-       return persons
+        return persons
     }
     
     private  func getRandomName() -> String {
@@ -43,21 +47,20 @@ class DataManager {
         return name
     }
     private  func getRandomLastName() -> String {
-       let rand = Int.random(in: 0..<lastNames.count)
-       let lastName = lastNames.remove(at: rand)
-       return lastName
-   }
+        let rand = Int.random(in: 0..<lastNames.count)
+        let lastName = lastNames.remove(at: rand)
+        return lastName
+    }
     private  func getRandomEmail() -> String {
-       let rand = Int.random(in: 0..<emails.count)
-       let email = emails.remove(at: rand)
-       return email
-   }
+        let rand = Int.random(in: 0..<emails.count)
+        let email = emails.remove(at: rand)
+        return email
+    }
     private func getRandomPhoneNumbers() -> String {
-       let rand = Int.random(in: 0..<phoneNumbers.count)
-       let phoneNumber = phoneNumbers.remove(at: rand)
-       return phoneNumber
-   }
-    
+        let rand = Int.random(in: 0..<phoneNumbers.count)
+        let phoneNumber = phoneNumbers.remove(at: rand)
+        return phoneNumber
+    }
 }
 
 

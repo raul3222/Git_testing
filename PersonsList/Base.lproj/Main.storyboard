@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="person" textLabel="5a5-vl-80d" style="IBUITableViewCellStyleDefault" id="Kzs-yz-80S">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personCellID" textLabel="5a5-vl-80d" style="IBUITableViewCellStyleDefault" id="Kzs-yz-80S">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kzs-yz-80S" id="q5L-eb-soA">
@@ -43,7 +43,7 @@
                             <outlet property="delegate" destination="Tm8-Oq-a0g" id="0NJ-uC-2QH"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="S5j-qX-3Qw"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.fill" catalog="system" id="S5j-qX-3Qw"/>
                     <navigationItem key="navigationItem" title="Persons List" id="ubO-3N-Xpp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ict-z1-jY9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -139,7 +139,7 @@
             </objects>
             <point key="canvasLocation" x="1462" y="86"/>
         </scene>
-        <!--Item-->
+        <!--Contacts-->
         <scene sceneID="I4v-EE-3XY">
             <objects>
                 <tableViewController id="Aqn-Ft-3PY" customClass="DetailedContactListTableViewController" customModule="PersonsList" customModuleProvider="target" sceneMemberID="viewController">
@@ -148,21 +148,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="detailsCellId" textLabel="7TM-bU-8BK" style="IBUITableViewCellStyleDefault" id="sjT-NT-qhq">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="detailsCellId" id="sjT-NT-qhq">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sjT-NT-qhq" id="XOl-E3-8On">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7TM-bU-8BK">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -171,11 +162,11 @@
                             <outlet property="delegate" destination="Aqn-Ft-3PY" id="WER-sa-hDp"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="hJt-OH-FuT"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.fill" catalog="system" id="hJt-OH-FuT"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jq8-es-Qmy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2329" y="865"/>
+            <point key="canvasLocation" x="2328.985507246377" y="864.50892857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Fd9-d6-CFo">
@@ -198,6 +189,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
