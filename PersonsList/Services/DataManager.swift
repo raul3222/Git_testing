@@ -8,8 +8,6 @@
 //import Foundation
 
 class DataManager {
-    
-   
     static var shared: [Person] = {
         let instance = DataManager()
         return instance.getPersonList()
@@ -17,7 +15,6 @@ class DataManager {
     
     private init() {}
     
-        
     private  var names = ["John", "Jim", "Tim", "Karl", "Ann",
                           "Peter", "Nik", "Lucy", "Mia", "Jane"]
     
@@ -40,7 +37,6 @@ class DataManager {
         }
         return persons
     }
-    
     private  func getRandomName() -> String {
         let rand = Int.random(in: 0..<names.count)
         let name = names.remove(at: rand)

@@ -35,6 +35,5 @@ class ContactListTableViewController: UITableViewController {
             guard let indexPath = tableView.indexPathForSelectedRow else { return }
             let person = contactList[indexPath.row]
             personInfoVC.person = person
-        
     }
 }
