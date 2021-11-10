@@ -26,13 +26,10 @@ class DetailedContactListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailsCellId", for: indexPath)
-        
         let contact = contactList[indexPath.section]
-        
         var content = cell.defaultContentConfiguration()
         
         if indexPath.row == 0 {
-            
             content.text = contact.phoneNumber
             content.image = UIImage(named: "phone_logo")
         } else {
@@ -40,14 +37,11 @@ class DetailedContactListTableViewController: UITableViewController {
             content.image = UIImage(named: "mail_logo1")
         }
         cell.contentConfiguration = content
-        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let contact = contactList[section]
         return "\(contact.name) \(contact.lastName)"
-        
     }
-  
 }
