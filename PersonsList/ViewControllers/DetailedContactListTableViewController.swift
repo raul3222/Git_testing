@@ -9,8 +9,8 @@ import UIKit
 
 class DetailedContactListTableViewController: UITableViewController {
     
-    var contactList: [Person] = DataManager.shared
-    var indexForContactList = 0
+    private var contactList: [Person] = DataManager.shared
+    private var indexForContactList = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 50
@@ -24,7 +24,8 @@ class DetailedContactListTableViewController: UITableViewController {
         return 2
     }
     
-   
+   // Нашел ошибку в методе ниже после отправки задания на проверку.
+   //Пока что не смог решить проблему.
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailsCellId", for: indexPath)
@@ -37,7 +38,6 @@ class DetailedContactListTableViewController: UITableViewController {
             
             content.text = contact.phoneNumber
             content.image = UIImage(named: "phone_logo")
-         
         } else {
             content.text = contact.email
             content.image = UIImage(named: "mail_logo1")
