@@ -10,7 +10,7 @@ import UIKit
 class DetailedContactListTableViewController: UITableViewController {
     
     var contactList: [Person] = DataManager.shared
-    
+    var indexForContactList = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 50
@@ -23,19 +23,26 @@ class DetailedContactListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
-
+    
+   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailsCellId", for: indexPath)
-        let contact = contactList[indexPath.row]
+        
+        let contact = contactList[indexForContactList]
+        
         var content = cell.defaultContentConfiguration()
         
         if indexPath.row == 0 {
+            
             content.text = contact.phoneNumber
             content.image = UIImage(named: "phone_logo")
+         
         } else {
             content.text = contact.email
             content.image = UIImage(named: "mail_logo1")
+
+            indexForContactList += 1
         }
         cell.contentConfiguration = content
         
@@ -47,4 +54,5 @@ class DetailedContactListTableViewController: UITableViewController {
         return "\(contact.name) \(contact.lastName)"
         
     }
+  
 }
