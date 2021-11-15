@@ -48,7 +48,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ict-z1-jY9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3239.130434782609" y="85.714285714285708"/>
+            <point key="canvasLocation" x="2874" y="-191"/>
         </scene>
         <!--Person info-->
         <scene sceneID="GeV-Jf-NIN">
@@ -118,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dzv-5k-Qjl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3923.188405797102" y="85.714285714285708"/>
+            <point key="canvasLocation" x="3622" y="-192"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="ctD-gi-nRa">
@@ -137,7 +137,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rSs-wU-Gzo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1462" y="86"/>
+            <point key="canvasLocation" x="1235" y="86"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="I4v-EE-3XY">
@@ -166,12 +166,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jq8-es-Qmy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2328.985507246377" y="864.50892857142856"/>
+            <point key="canvasLocation" x="2874" y="516"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="Fd9-d6-CFo">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pUu-8y-2f6" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pUu-8y-2f6" customClass="TabBarViewController" customModule="PersonsList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="VD9-Qu-fod"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TOj-zu-Dd1">
@@ -186,7 +186,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXJ-7U-xUn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2328.985507246377" y="85.714285714285708"/>
+            <point key="canvasLocation" x="2000" y="86"/>
         </scene>
     </scenes>
     <resources>

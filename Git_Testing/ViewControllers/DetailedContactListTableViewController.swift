@@ -9,14 +9,15 @@ import UIKit
 
 class DetailedContactListTableViewController: UITableViewController {
     
-    private var contactList: [Person] = DataManager.shared
+    var persons: [Person]!
+   //private var contactList: [Person] = DataManager.shared
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 50
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return contactList.count
+        return persons.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,7 +27,7 @@ class DetailedContactListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailsCellId", for: indexPath)
-        let contact = contactList[indexPath.section]
+        let contact = persons[indexPath.section]
         var content = cell.defaultContentConfiguration()
         
         if indexPath.row == 0 {
@@ -41,7 +42,7 @@ class DetailedContactListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let contact = contactList[section]
+        let contact = persons[section]
         return "\(contact.name) \(contact.lastName)"
     }
 }

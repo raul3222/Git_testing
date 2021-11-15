@@ -17,10 +17,11 @@
 		AD41BFDE273A910A003DEE8B /* ContactListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD41BFDD273A910A003DEE8B /* ContactListTableViewController.swift */; };
 		AD41BFE0273AA1F0003DEE8B /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD41BFDF273AA1F0003DEE8B /* PersonInfoViewController.swift */; };
 		AD41BFE2273AB019003DEE8B /* DetailedContactListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD41BFE1273AB019003DEE8B /* DetailedContactListTableViewController.swift */; };
+		AD43ABEE273DB76D00BE7F17 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD43ABED273DB76D00BE7F17 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AD41BFBF273A844C003DEE8B /* PersonsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD41BFBF273A844C003DEE8B /* Git_Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Git_Testing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD41BFC2273A844C003DEE8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD41BFC4273A844C003DEE8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AD41BFC9273A844C003DEE8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +33,7 @@
 		AD41BFDD273A910A003DEE8B /* ContactListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewController.swift; sourceTree = "<group>"; };
 		AD41BFDF273AA1F0003DEE8B /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
 		AD41BFE1273AB019003DEE8B /* DetailedContactListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedContactListTableViewController.swift; sourceTree = "<group>"; };
+		AD43ABED273DB76D00BE7F17 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,7 @@
 		AD41BFB6273A844B003DEE8B = {
 			isa = PBXGroup;
 			children = (
-				AD41BFC1273A844C003DEE8B /* PersonsList */,
+				AD41BFC1273A844C003DEE8B /* Git_Testing */,
 				AD41BFC0273A844C003DEE8B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,12 +58,12 @@
 		AD41BFC0273A844C003DEE8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AD41BFBF273A844C003DEE8B /* PersonsList.app */,
+				AD41BFBF273A844C003DEE8B /* Git_Testing.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AD41BFC1273A844C003DEE8B /* PersonsList */ = {
+		AD41BFC1273A844C003DEE8B /* Git_Testing */ = {
 			isa = PBXGroup;
 			children = (
 				AD41BFDC273A90EB003DEE8B /* ViewControllers */,
@@ -74,7 +76,7 @@
 				AD41BFCD273A8453003DEE8B /* LaunchScreen.storyboard */,
 				AD41BFD0273A8453003DEE8B /* Info.plist */,
 			);
-			path = PersonsList;
+			path = Git_Testing;
 			sourceTree = "<group>";
 		};
 		AD41BFD6273A857F003DEE8B /* Services */ = {
@@ -99,6 +101,7 @@
 				AD41BFDD273A910A003DEE8B /* ContactListTableViewController.swift */,
 				AD41BFDF273AA1F0003DEE8B /* PersonInfoViewController.swift */,
 				AD41BFE1273AB019003DEE8B /* DetailedContactListTableViewController.swift */,
+				AD43ABED273DB76D00BE7F17 /* TabBarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -106,9 +109,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD41BFBE273A844C003DEE8B /* PersonsList */ = {
+		AD41BFBE273A844C003DEE8B /* Git_Testing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD41BFD3273A8453003DEE8B /* Build configuration list for PBXNativeTarget "PersonsList" */;
+			buildConfigurationList = AD41BFD3273A8453003DEE8B /* Build configuration list for PBXNativeTarget "Git_Testing" */;
 			buildPhases = (
 				AD41BFBB273A844C003DEE8B /* Sources */,
 				AD41BFBC273A844C003DEE8B /* Frameworks */,
@@ -118,9 +121,9 @@
 			);
 			dependencies = (
 			);
-			name = PersonsList;
+			name = Git_Testing;
 			productName = PersonsList;
-			productReference = AD41BFBF273A844C003DEE8B /* PersonsList.app */;
+			productReference = AD41BFBF273A844C003DEE8B /* Git_Testing.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +141,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AD41BFBA273A844B003DEE8B /* Build configuration list for PBXProject "PersonsList" */;
+			buildConfigurationList = AD41BFBA273A844B003DEE8B /* Build configuration list for PBXProject "Git_Testing" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -151,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AD41BFBE273A844C003DEE8B /* PersonsList */,
+				AD41BFBE273A844C003DEE8B /* Git_Testing */,
 			);
 		};
 /* End PBXProject section */
@@ -174,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD43ABEE273DB76D00BE7F17 /* TabBarViewController.swift in Sources */,
 				AD41BFDB273A8891003DEE8B /* Person.swift in Sources */,
 				AD41BFE0273AA1F0003DEE8B /* PersonInfoViewController.swift in Sources */,
 				AD41BFD8273A859E003DEE8B /* DataManager.swift in Sources */,
@@ -331,7 +335,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RGKK797JHY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonsList/Info.plist;
+				INFOPLIST_FILE = Git_Testing/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -359,7 +363,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RGKK797JHY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonsList/Info.plist;
+				INFOPLIST_FILE = Git_Testing/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -381,7 +385,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD41BFBA273A844B003DEE8B /* Build configuration list for PBXProject "PersonsList" */ = {
+		AD41BFBA273A844B003DEE8B /* Build configuration list for PBXProject "Git_Testing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD41BFD1273A8453003DEE8B /* Debug */,
@@ -390,7 +394,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD41BFD3273A8453003DEE8B /* Build configuration list for PBXNativeTarget "PersonsList" */ = {
+		AD41BFD3273A8453003DEE8B /* Build configuration list for PBXNativeTarget "Git_Testing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD41BFD4273A8453003DEE8B /* Debug */,

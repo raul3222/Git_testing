@@ -9,7 +9,9 @@ import UIKit
 
 class ContactListTableViewController: UITableViewController {
     
-    private var contactList = DataManager.shared
+    //private var contactList = DataManager.shared
+    
+    var persons: [Person]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,12 +19,12 @@ class ContactListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        contactList.count
+        persons.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personCellID", for: indexPath)
-        let contact = contactList[indexPath.row]
+        let contact = persons[indexPath.row]
         var content = cell.defaultContentConfiguration()
         content.text = "\(contact.name) \(contact.lastName)"
         cell.contentConfiguration = content
@@ -33,7 +35,7 @@ class ContactListTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             guard let personInfoVC = segue.destination as? PersonInfoViewController else { return }
             guard let indexPath = tableView.indexPathForSelectedRow else { return }
-            let person = contactList[indexPath.row]
+            let person = persons[indexPath.row]
             personInfoVC.person = person
     }
 }
